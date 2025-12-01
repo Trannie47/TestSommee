@@ -27,6 +27,6 @@ jobs:
 
           local-dir: "./"
 
-          server-dir: "/http://www.huyentrangtest.somee.com/"
+          server-dir: "/www.huyentrangtest.somee.com/"
 
           dangerous-clean-slate: false
