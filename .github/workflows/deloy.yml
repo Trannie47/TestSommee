@@ -1,0 +1,32 @@
+name: Deploy to Somee
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Somee (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          protocol: ftp
+          port: 21
+          log-level: standard
+          timeout: 180000
+
+          local-dir: "./"
+
+          server-dir: "/http://www.huyentrangtest.somee.com/"
+
+          dangerous-clean-slate: false
