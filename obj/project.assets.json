@@ -777,7 +777,7 @@
         }
       }
     },
-    "net6.0/win-x64": {
+    "net6.0/win-x86": {
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -828,7 +828,7 @@
       "Microsoft.Data.SqlClient.SNI.runtime/2.1.1": {
         "type": "package",
         "native": {
-          "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {}
+          "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/6.0.36": {
@@ -2795,15 +2795,15 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
             "version": "[6.0.36, 6.0.36]"
           },
           {
-            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "name": "Microsoft.NETCore.App.Runtime.win-x86",
             "version": "[6.0.36, 6.0.36]"
           },
           {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
             "version": "[6.0.36, 6.0.36]"
           }
         ],
@@ -2819,7 +2819,7 @@
       }
     },
     "runtimes": {
-      "win-x64": {
+      "win-x86": {
         "#import": []
       }
     }
