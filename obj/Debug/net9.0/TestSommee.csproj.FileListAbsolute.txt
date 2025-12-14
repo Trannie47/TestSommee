@@ -1,9 +1,0 @@
-E:\TestSommee\obj\Debug\net9.0\rpswa.dswa.cache.json
-E:\TestSommee\obj\Debug\net9.0\TestSommee.GeneratedMSBuildEditorConfig.editorconfig
-E:\TestSommee\obj\Debug\net9.0\TestSommee.AssemblyInfoInputs.cache
-E:\TestSommee\obj\Debug\net9.0\TestSommee.AssemblyInfo.cs
-E:\TestSommee\obj\Debug\net9.0\TestSommee.csproj.CoreCompileInputs.cache
-E:\TestSommee\obj\Debug\net9.0\TestSommee.MvcApplicationPartsAssemblyInfo.cache
-E:\TestSommee\obj\Debug\net9.0\TestSommee.RazorAssemblyInfo.cache
-E:\TestSommee\obj\Debug\net9.0\TestSommee.RazorAssemblyInfo.cs
-E:\TestSommee\obj\Debug\net9.0\TestSommee.sourcelink.json
