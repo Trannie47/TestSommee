@@ -1,42 +1,38 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using StudentManager.Models;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Web.Mvc;
+using TestSommee.Models;
 
-namespace StudentManager.Controllers
+namespace TestSommee.Controllers
 {
     public class StudentController : Controller
     {
-        private readonly string _connStr =
-            "Server=dbSinhVien.mssql.somee.com;" +
-            "Database=dbSinhVien;" +
-            "User Id=lthuyentrang_SQLLogin_1;" +
-            "Password=kpqx7relco;" +
-            "TrustServerCertificate=True;";
+        private string connStr =
+            "Server=xxx.mssql.somee.com;Database=xxx;User Id=xxx;Password=xxx;";
 
-
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            var students = new List<Student>();
+            List<Student> list = new List<Student>();
 
-            using (var conn = new SqlConnection(_connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
-                var cmd = new SqlCommand("SELECT * FROM Students", conn);
-                var reader = cmd.ExecuteReader();
+                SqlCommand cmd = new SqlCommand(
+                    "SELECT Id, Name, Email FROM Students", conn);
 
-                while (reader.Read())
+                SqlDataReader rd = cmd.ExecuteReader();
+                while (rd.Read())
                 {
-                    students.Add(new Student
+                    list.Add(new Student
                     {
-                        Id = (int)reader["Id"],
-                        Name = reader["Name"].ToString(),
-                        Email = reader["Email"].ToString()
+                        Id = (int)rd["Id"],
+                        Name = rd["Name"].ToString(),
+                        Email = rd["Email"].ToString()
                     });
                 }
             }
 
-            return View(students);
+            return View(list);
         }
     }
 }
