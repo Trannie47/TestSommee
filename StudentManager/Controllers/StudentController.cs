@@ -8,7 +8,12 @@ namespace StudentManager.Controllers
     public class StudentController : Controller
     {
         private readonly string _connStr =
-            "Server=xxx.mssql.somee.com;Database=xxx;User Id=xxx;Password=xxx;";
+            "Server=dbSinhVien.mssql.somee.com;" +
+            "Database=dbSinhVien;" +
+            "User Id=lthuyentrang_SQLLogin_1;" +
+            "Password=kpqx7relco;" +
+            "TrustServerCertificate=True;";
+
 
         public IActionResult Index()
         {
