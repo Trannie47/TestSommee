@@ -1578,11 +1578,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TestSommee\\StudentManager\\StudentManager.csproj",
+      "projectUniqueName": "E:\\TestSommee\\StudentManager.csproj",
       "projectName": "StudentManager",
-      "projectPath": "E:\\TestSommee\\StudentManager\\StudentManager.csproj",
+      "projectPath": "E:\\TestSommee\\StudentManager.csproj",
       "packagesPath": "C:\\Users\\HT\\.nuget\\packages\\",
-      "outputPath": "E:\\TestSommee\\StudentManager\\obj\\",
+      "outputPath": "E:\\TestSommee\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HT\\AppData\\Roaming\\NuGet\\NuGet.Config",
