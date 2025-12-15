@@ -11,5 +11,6 @@ namespace TestSommee.Data
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<MonHoc> MonHocs { get; set; }
     }
 }
