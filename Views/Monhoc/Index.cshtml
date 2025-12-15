@@ -1,0 +1,23 @@
+@model List<TestSommee.Models.MonHoc>
+
+<h2>Danh sách môn học</h2>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Mã môn học</th>
+        <th>Tên môn học</th>
+        <th>Số tín chỉ</th>
+        <th>Số tiết</th>
+        <th>Trạng thái</th>
+    </tr>
+@foreach (var m in Model)
+{
+    <tr>
+        <td>@m.MaMonHoc</td>
+        <td>@m.TenMonHoc</td>
+        <td>@m.SoTinChi</td>
+        <td>@m.SoTiet</td>
+        <td>@(m.IsDelete ? "Đã xóa" : "Hoạt động")</td>
+    </tr>
+}
+</table>
